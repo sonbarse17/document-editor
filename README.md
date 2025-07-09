@@ -234,6 +234,6 @@ npm install
 
 **Created by [Sushant Sonbarse](https://github.com/sonbarse17/)**
 
-📂 **Repository:** https://github.com/sonbarse17/collaborative-document-editor
+📂 **Repository:** https://github.com/sonbarse17/document-editor
 
 ⭐ If you found this project helpful, please give it a star!
