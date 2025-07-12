@@ -28,6 +28,10 @@ export class DocumentController {
     public getDocument = async (req: Request, res: Response): Promise<void> => {
         try {
             const { id } = req.params;
+            if (!id) {
+                res.status(400).json({ error: 'Document ID is required' });
+                return;
+            }
             const document = this.documentService.getDocument(id);
             
             if (!document) {
@@ -45,6 +49,10 @@ export class DocumentController {
     public updateDocument = async (req: Request, res: Response): Promise<void> => {
         try {
             const { id } = req.params;
+            if (!id) {
+                res.status(400).json({ error: 'Document ID is required' });
+                return;
+            }
             const updateData: UpdateDocumentRequest = req.body;
             
             const document = this.documentService.updateDocument(id, updateData);
@@ -64,6 +72,10 @@ export class DocumentController {
     public deleteDocument = async (req: Request, res: Response): Promise<void> => {
         try {
             const { id } = req.params;
+            if (!id) {
+                res.status(400).json({ error: 'Document ID is required' });
+                return;
+            }
             const deleted = this.documentService.deleteDocument(id);
             
             if (!deleted) {
