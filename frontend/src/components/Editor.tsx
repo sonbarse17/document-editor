@@ -1,6 +1,7 @@
 import React from 'react';
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
+import Document from '@tiptap/extension-document';
 import TextStyle from '@tiptap/extension-text-style';
 import Color from '@tiptap/extension-color';
 
@@ -12,6 +13,7 @@ interface EditorProps {
 const Editor: React.FC<EditorProps> = ({ content, onChange }) => {
   const editor = useEditor({
     extensions: [
+      Document,
       StarterKit,
       TextStyle,
       Color
