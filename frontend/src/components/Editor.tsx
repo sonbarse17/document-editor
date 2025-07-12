@@ -12,11 +12,7 @@ interface EditorProps {
 const Editor: React.FC<EditorProps> = ({ content, onChange }) => {
   const editor = useEditor({
     extensions: [
-      StarterKit.configure({
-        document: {
-          content: 'block+',
-        },
-      }),
+      StarterKit,
       TextStyle,
       Color
     ],
