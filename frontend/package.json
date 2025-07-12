@@ -11,8 +11,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
-    "typescript": "^5.3.3",
+    "react-scripts": "5.0.1",
     "@tiptap/react": "^2.1.13",
     "@tiptap/starter-kit": "^2.1.13",
     "@tiptap/extension-text-style": "^2.1.13",
@@ -20,6 +19,7 @@
     "axios": "^1.6.2"
   },
   "devDependencies": {
+    "typescript": "~4.9.5",
     "@types/react": "^18.2.45",
     "@types/react-dom": "^18.2.18"
   },
