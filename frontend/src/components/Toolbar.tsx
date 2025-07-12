@@ -1,12 +1,6 @@
 import React from 'react';
-import { useEditor, EditorContent } from '@tiptap/react';
 
 const Toolbar: React.FC = () => {
-  const editor = useEditor({
-    extensions: [],
-    editable: false,
-  });
-
   // This toolbar will be enhanced to work with the main editor
   // For now, it provides a placeholder for formatting controls
   return (

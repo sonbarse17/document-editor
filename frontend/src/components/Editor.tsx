@@ -16,7 +16,7 @@ const Editor: React.FC<EditorProps> = ({ content, onChange }) => {
       TextStyle,
       Color
     ],
-    content,
+    content: content || '<p></p>',
     onUpdate: ({ editor }) => {
       onChange(editor.getHTML());
     },
@@ -25,6 +25,7 @@ const Editor: React.FC<EditorProps> = ({ content, onChange }) => {
         class: 'prose prose-sm sm:prose lg:prose-lg xl:prose-2xl mx-auto focus:outline-none',
       },
     },
+    immediatelyRender: false,
   });
 
   React.useEffect(() => {
